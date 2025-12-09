@@ -1,16 +1,18 @@
 # Roboto Flex Variable Font Playground
 
-Interactive web application for creating static font instances from the Roboto Flex variable font file. Adjust 13 variation axes and 4 OpenType features in real-time, then download your custom .ttf file.
+Interactive web application for creating static font instances from the Roboto Flex variable font file. Adjust 13 variation axes in real-time, then download your custom .ttf and .woff2 files.
+
+Warning:
+Starting from Dec 9, 2025, I’m using a modified font file in which I added automatic height adjustment for characters like `-, –, +`, bringing them to the same level as lowercase letters. As far as I can tell, nothing broke, but if you notice anything strange, please message me on [Telegram](https://t.me/sugrarin).
+.
 
 ![Preview](https://img.shields.io/badge/Status-Ready-success)
 
 ## Features
 
-✨ **Real-time Preview** - See font changes instantly as you adjust sliders  
-🎨 **13 Variation Axes** - Full control over optical size, weight, width, slant, and more  
-🔤 **OpenType Features** - Toggle ligatures, localized forms, and proportional numbers  
-⬇️ **Download Static Fonts** - Generate and download custom .ttf files  
-🌙 **Premium Dark UI** - Modern glassmorphism design with smooth animations
+✨ **Real-time Preview** - See font changes instantly as you adjust sliders;
+🎨 **13 Variation Axes** - Full control over optical size, weight, width, slant, and more;
+⬇️ **Download Static Fonts** - Generate and download custom .ttf and .woff2 files.
 
 ## Quick Start
 
@@ -56,6 +58,8 @@ Or navigate to: `file:///Users/timur/Code/flex-playground/index.html`
 
 ## OpenType Features
 
+(Not sure everything is working, it needs to be checked.)
+
 - **liga** - Standard Ligatures
 - **locl** - Localized Forms
 - **pnum** - Proportional Numbers
@@ -80,8 +84,10 @@ Or navigate to: `file:///Users/timur/Code/flex-playground/index.html`
 
 1. **Real-time Preview**: CSS `font-variation-settings` updates as you adjust sliders
 2. **Font Generation**: Python backend uses `fontTools.varLib.instancer` to create static instances
-3. **Download**: Generated .ttf file sent to browser via Flask endpoint
+3. **Download**: Generated .ttf/.woff2 file sent to browser via Flask endpoint
 
 ## License
 
 Built for font design and typography exploration.
+
+Based on https://github.com/googlefonts/roboto-flex
