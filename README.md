@@ -2,7 +2,7 @@
 
 Interactive web application for creating static font instances from the Roboto Flex variable font file. Adjust 13 variation axes in real-time, then download your custom .ttf and .woff2 files.
 
-
+![](demo.gif)
 
 Warning:\
 Starting from Dec 9, 2025, I’m using a modified font file in which I added automatic height adjustment for characters like `-, –, +`, bringing them to the same level as lowercase letters. As far as I can tell, nothing broke, but if you notice anything strange, please message me on [Telegram](https://t.me/sugrarin).
